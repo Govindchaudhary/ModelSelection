@@ -52,6 +52,7 @@ from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
 
 #apply the k-fold cross validation
+# best way to evaluate the model performance
 
 from sklearn.model_selection import cross_val_score
 accuracies = cross_val_score(estimator = classifier, X = X_train,y = y_train , cv=10)
